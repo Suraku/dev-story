@@ -16,7 +16,7 @@ App.Pause = {};
 App.Concept = { id: 1 };
 App.Coding = { id: 2 }; 
 App.Release = { id: 3 };
-//App.YourGame = { id: 4 }; 
+App.Optimize = { id: 4 };
 
 game.module(
     'game.main'
@@ -33,7 +33,9 @@ game.module(
     'modules.home.objects', 'modules.home.scenes',
     'modules.concept.objects', 'modules.concept.scenes',
     'modules.coding.objects', 'modules.coding.scenes',
-    'modules.release.objects', 'modules.release.scenes'
+    'modules.release.objects', 'modules.release.scenes',
+    'modules.optimize.objects', 'modules.optimize.scenes'
+    
 )
 .body(function(){
 
@@ -229,7 +231,7 @@ game.module(
             name: "Level 1", 
             title: "Moonlighting", 
             description: "It’s time to take the tech world by storm. All you need is an app...", 
-            games: [1, 2, 3], 
+            games: [1, 2, 4, 3], 
             rating: game.storage.get("level_1_rating") || 0, 
             palette: [0x394551, 0x525e6a, 0x69b5ae, 0xFFFFFF],
             feedback: [[
@@ -250,7 +252,7 @@ game.module(
             name: "Level 2", 
             title: "First job", 
             description: "You scored your first job! Try not to mess it up...", 
-            games: [1, 2, 3], 
+            games: [1, 2, 4, 3], 
             rating: game.storage.get("level_2_rating") || 0, 
             palette: [0xe3cda4, 0xe6b493, 0x695c7a, 0x2f343b],
             feedback: [[
@@ -271,7 +273,7 @@ game.module(
             name: "Level 3", 
             title: "Start up", 
             description: "There’s some hype around you now. You just need a hit...", 
-            games: [1, 2, 3], 
+            games: [1, 2, 4, 3], 
             rating: game.storage.get("level_3_rating") || 0, 
             palette: [0xff7e66, 0x455d7a, 0xFFFFFF, 0x455d7a],
             feedback: [[

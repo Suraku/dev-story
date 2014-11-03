@@ -1339,7 +1339,7 @@ game.module(
             }
 
             // Get percentage score
-            this.overallScore = Math.ceil((score/300) * 100);
+            this.overallScore = Math.ceil((score/400) * 100);
             //this.overallScore = 100;
 
             // Save score
